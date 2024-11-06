@@ -45,7 +45,7 @@
             </li>
             <li class="link">
               <div class="dropdown-navigation">
-                <router-link  to="/pricing">Feeds</router-link>
+                <router-link  to="/feeds">Feeds</router-link>
               </div>
             </li>
 
@@ -74,8 +74,21 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
+                  <router-link  to="/">
+                    <p class="title-content-para" @click="toggleMobileNav2">Home</p>
+                  </router-link>
+                </div>
+              </div>
+
+
+            </label>
+
+            <label class="accordion-wrapper">
+              <input type="checkbox" class="accordion" hidden />
+              <div class="title">
+                <div class="title-content">
                   <router-link  to="/about">
-                    <p class="title-content-para" @click="toggleMobileNav2">Why ATM</p>
+                  <p class="title-content-para" @click="toggleMobileNav2">About</p>
                   </router-link>
                 </div>
               </div>
@@ -87,54 +100,41 @@
               <input type="checkbox" class="accordion" hidden />
               <div class="title">
                 <div class="title-content">
-                  <router-link  to="/testimonials">
-                  <p class="title-content-para" @click="toggleMobileNav2">Testimonials</p>
-                  </router-link>
-                </div>
-              </div>
-
-
-            </label>
-
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <router-link  to="/pricing">
-                  <p class="title-content-para" @click="toggleMobileNav2">Pricing</p>
+                  <router-link  to="/feeds">
+                  <p class="title-content-para" @click="toggleMobileNav2">Feeds</p>
                   </router-link>
                 </div>
               </div>
 
             </label>
 
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <router-link  to="/contact">
-                  <p class="title-content-para" @click="toggleMobileNav2">Contact Us</p>
-                  </router-link>
-                </div>
-              </div>
+<!--            <label class="accordion-wrapper">-->
+<!--              <input type="checkbox" class="accordion" hidden />-->
+<!--              <div class="title">-->
+<!--                <div class="title-content">-->
+<!--                  <router-link  to="/contact">-->
+<!--                  <p class="title-content-para" @click="toggleMobileNav2">Contact Us</p>-->
+<!--                  </router-link>-->
+<!--                </div>-->
+<!--              </div>-->
 
-            </label>
+<!--            </label>-->
 
-            <label class="accordion-wrapper">
-              <input type="checkbox" class="accordion" hidden />
-              <div class="title">
-                <div class="title-content">
-                  <router-link  to="/faq">
-                    <p class="title-content-para" @click="toggleMobileNav2">F.A.Q</p>
-                  </router-link>
-                </div>
-              </div>
+<!--            <label class="accordion-wrapper">-->
+<!--              <input type="checkbox" class="accordion" hidden />-->
+<!--              <div class="title">-->
+<!--                <div class="title-content">-->
+<!--                  <router-link  to="/faq">-->
+<!--                    <p class="title-content-para" @click="toggleMobileNav2">F.A.Q</p>-->
+<!--                  </router-link>-->
+<!--                </div>-->
+<!--              </div>-->
 
-            </label>
+<!--            </label>-->
 
-            <button class="mobile-auth" @click="login">Log In</button>
-            <br/>
-            <button class="mobile-auth" @click="register">Open Account</button>
+<!--            <button class="mobile-auth" @click="login">Log In</button>-->
+<!--            <br/>-->
+<!--            <button class="mobile-auth" @click="register">Open Account</button>-->
 
 
           </ul>
