@@ -1,14 +1,20 @@
 <template>
   <div class="alpha">
 
-    <a class="btn-default-2" href="">VIEW ALL POSTS</a>
-    <a class="btn-default" href="https://tomsheldonhaleyfeeds.com/blog-2/">VIEW ALL POSTS</a>
+    <button  class="btn-default-2" >VIEW ALL POSTS</button>
+    <button @click="onPostClick" class="btn-default" >VIEW ALL POSTS</button>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomeSection6"
+  name: "HomeSection6",
+  methods: {
+    onPostClick() {
+      this.$router.push("/feeds");
+      window.scrollTo(0, 0);
+    },
+  },
 }
 </script>
 
@@ -26,7 +32,7 @@ export default {
 
 .btn-default{
   background-color: #333;
-  border-color: #333;
+  border: none;
   color: #FFFFFF;
   opacity: 1;
   width: 50%;
@@ -38,7 +44,7 @@ export default {
 
 .btn-default-2{
   background-color: rgba(0, 0, 0, 0.02);
-  border-color: rgba(0, 0, 0, 0.02);
+  border: none;
   color: rgba(0, 0, 0, 0.02);
   opacity: 1;
   width: 50%;
