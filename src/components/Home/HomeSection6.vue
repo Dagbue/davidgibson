@@ -53,4 +53,18 @@ export default {
   padding-bottom: 18px;
   border-radius: 6px 0 6px 0;
 }
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .alpha{
+    width: 93%;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>

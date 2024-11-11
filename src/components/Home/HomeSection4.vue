@@ -93,4 +93,41 @@ export default {
   padding-top: 10%;
   font-size: 0.9rem;
 }
+
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .section-1{
+    display: block;
+    width: 100%;
+  }
+
+  .section-1-text{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    height: 100%;
+    border-radius: unset;
+    border: unset;
+    padding: 1.5rem;
+  }
+
+  .section-1-image{
+    border-radius: unset;
+    height: 450px;
+
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 97%;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>

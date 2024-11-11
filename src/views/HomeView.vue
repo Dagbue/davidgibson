@@ -25,7 +25,8 @@ export default {
   name: 'HomeView',
   components: {
     HomeFooter,
-    HomeSection6, HomeSection5, HomeSection4, HomeSection3, HomeSection2, HomeSection1, HeroSection},
+    HomeSection6, HomeSection5, HomeSection4, HomeSection3, HomeSection2, HomeSection1,
+    HeroSection},
 }
 </script>
 

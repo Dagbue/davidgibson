@@ -5,6 +5,7 @@
         <span id="current-option-text1" :data-previous-text="previousText1" :data-next-text="nextText1">{{ currentText1 }}</span>
         <span id="current-option-text2" :data-previous-text="previousText2" :data-next-text="nextText2">{{ currentText2 }}</span>
       </div>
+          <div id="image2" :style="{ backgroundImage: 'url(' + currentImage + ')' }"></div>
       <button id="previous-option" @click="previousOption"></button>
       <button id="next-option" @click="nextOption"></button>
     </div>
@@ -98,6 +99,7 @@ export default {
   }
 }
 </script>
+
 
 
 <style scoped>
@@ -246,6 +248,18 @@ export default {
   pointer-events: none;
 }
 
+#carousel-wrapper #image2 {
+  height: 350px;
+  width: 345px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: unset;
+  position: unset;
+  transform: unset;
+  display: none;
+}
+
 @keyframes previous-text {
   50%,
   55% {
@@ -326,11 +340,91 @@ export default {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+
+  #carousel-wrapper #image {
+    display: none;
+  }
+
+  #carousel-wrapper #menu #previous-option {
+    display: none;
+  }
+
+  #carousel-wrapper #menu #next-option {
+    display: none;
+  }
+
+  #carousel-wrapper #menu #current-option {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 30px;
+  }
+
+  #carousel-wrapper #image2 {
+    height: 650px;
+    width: 545px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: unset;
+    position: unset;
+    transform: unset;
+    display: unset;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  #carousel-wrapper #menu {
+    height: 570px;
+    width: 100%;
+    overflow: hidden;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    transition: all 0.6s ease-in-out;
+  }
 
 }
 
 @media (max-width: 500px) {
+  #carousel-wrapper #menu #current-option #current-option-text1 {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    width: 420px;
+    height: 200px;
+  }
 
+  #carousel-wrapper #menu #current-option #current-option-text2 {
+    font-size: 1rem;
+    line-height: 1.7rem;
+    width: 420px;
+    height: 25px;
+  }
+
+  #carousel-wrapper #image2 {
+    height: 650px;
+    width: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: unset;
+    position: unset;
+    transform: unset;
+    display: unset;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
 }
+
 </style>

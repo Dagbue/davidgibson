@@ -4,8 +4,8 @@
 
     <div class="container">
       <p class="text-1">CONTACT ME</p>
-      <p class="text-2">Possumus e aute sed se litteris in aliquip, a tamen quem qui pariatur ex pariatur nam nulla
-        possumus, magna do nostrud non quid qui cernantur eram aliqua e illum labore proident consequat.</p>
+      <p class="text-2">I'm here to help! Whether you have a question, need support, or just want to say hello, feel
+        free to drop me a message. I strive to respond to all inquiries promptly and look forward to hearing from you!.</p>
     </div>
 
     <div id="contact-form" class="contact-form">
@@ -206,5 +206,19 @@ export default {
   font-size: 15px;
   border: solid 1px #EEF0F1;
   width: 100%;
+}
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .contact-form .form {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+
 }
 </style>

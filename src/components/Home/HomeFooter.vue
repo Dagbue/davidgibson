@@ -94,4 +94,23 @@ export default {
 .second-line{
   border: 0.5px solid #e6e6e6;
 }
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .text-2{
+    width: 90%;
+  }
+
+  .container{
+    padding: 60px 0 50px 0;
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>

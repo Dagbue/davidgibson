@@ -82,4 +82,18 @@ export default {
 .second-line{
   border: 0.5px solid #e6e6e6;
 }
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .first-line{
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>

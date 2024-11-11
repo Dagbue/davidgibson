@@ -91,4 +91,38 @@ export default {
   padding-top: 10%;
   font-size: 0.9rem;
 }
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .section-1{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-1-text{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 95%;
+    height: 100%;
+    border-radius: unset;
+    border: none;
+  }
+
+  .section-1-image{
+    border-radius: unset;
+    height: 500px;
+    width: 97%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>

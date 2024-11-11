@@ -366,7 +366,7 @@ i{
   width: 100%;
   max-width: 240px;
   height: 100%;
-  background-color: #f9f9f9;
+  background-color: #e5e5ea;
   font-size: 20px;
 }
 
@@ -608,9 +608,9 @@ a {
     justify-content: space-between;
   }
   .logo {
-    width: 20%;
+    width: 35%;
     padding-left: unset;
-    margin-left: 10px;
+    margin-left: unset;
   }
   .separate{
     display: flex;

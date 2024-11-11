@@ -73,4 +73,44 @@ export default {
   line-height: 1.5;
   font-size: 1.2rem;
 }
+
+
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 700px) {
+  .alpha{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4%;
+  }
+
+  .text-part{
+    width: 90%;
+  }
+  .image-part{
+    width: 90%;
+  }
+
+  .image{
+    max-width: 90%;
+  }
+
+  .text-1{
+    margin-left: unset;
+  }
+
+  .text-2{
+    margin-left: unset;
+  }
+
+  .text-3{
+    margin-left: unset;
+  }
+}
+
+@media (max-width: 500px) {
+
+}
 </style>
