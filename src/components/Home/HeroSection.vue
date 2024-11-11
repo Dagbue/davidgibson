@@ -355,15 +355,9 @@ export default {
   }
 
   #carousel-wrapper #menu #current-option {
-    position: relative;
     width: 100%;
     height: 100%;
     transform: unset;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
     margin-top: 30px;
   }
 
@@ -397,12 +391,14 @@ export default {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   #carousel-wrapper #menu #current-option #current-option-text1 {
     font-size: 1.4rem;
     line-height: 2rem;
     width: 420px;
     height: 200px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   #carousel-wrapper #menu #current-option #current-option-text2 {
@@ -410,11 +406,13 @@ export default {
     line-height: 1.7rem;
     width: 420px;
     height: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   #carousel-wrapper #image2 {
     height: 650px;
-    width: 420px;
+    width: 390px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -424,6 +422,17 @@ export default {
     display: unset;
     margin-top: 25px;
     margin-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #carousel-wrapper #menu #current-option {
+    width: 100%;
+    height: 100%;
+    transform: unset;
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 3%;
   }
 }
 
